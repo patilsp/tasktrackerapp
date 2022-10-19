@@ -1,13 +1,106 @@
-body {
+*{
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(55deg, rgba(1, 95, 183, 0.9732216701223994) 25%, rgba(210, 226, 66, 0.5) 4%),linear-gradient(44deg, rgba(0, 43, 99, 0.07922090238615942) 39%, rgba(242, 140, 143, 0.5) 18%),linear-gradient(118deg, rgba(84, 202, 242, 0.03152997265339608) 40%, rgba(247, 155, 187, 0.5) 54%),linear-gradient(58deg, rgba(90, 90, 237, 0.16144443572260592) 83%, rgba(249, 156, 142, 0.5) 23%); background-blend-mode: normal,lighten,multiply,hard-light;
+  font-family: 'DM Sans', sans-serif;
+  overflow: hidden;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container {
+  border-radius: 8px;
+  width: 100%;
+  min-width: 550px;
+  max-height: 100%;
+  background-color: #10101d;
+  padding: 24px;
+  overflow: auto;
+}
+
+.app-header {
+  font-size: 20px;
+  line-height: 32px;
+  margin: 0 0 12px 0;
+  color: #fff;
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 5px;
+  margin-top: 5px;
+}
+
+.task{
+  background-color: #191933;
+  border-radius: 4px;
+  margin-bottom: 12px;
+  align-items: center;
+  padding: 5px 15px 0px 10px;
+}
+.task.reminder{
+  border-left: 5px solid lightgreen;
+
+}
+.task h3{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  font-size: 20px;
+}
+p{
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: #fff;
+  font-size: 14px;
+  line-height: 24px;
+  position: relative;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.add-form{
+  display: block;
+}
+.row{
+  padding: 5px; 
+  margin-bottom: 10px;
+}
+.form-control{
+  display: grid;
+  padding: 5px;
+  border: 0px;
+  margin: 5px;
+}
+input{
+  padding: 5px;
+  border-radius: 5px;
+  border: 2px solid #ccc;
+}
+label {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.btn-block{
+  width: 100%;
+  margin: 5px;
+}
+.form-block{
+  display: flex
+}
+checkbox{
+  margin: 5px;
+  width: 60px;
 }
